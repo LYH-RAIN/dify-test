@@ -221,12 +221,12 @@ Resources:
           - Ref: EcsVpc
           - Ref: VpcId
       SecurityGroupIngress:
-        - PortRange: 443/443
+        - PortRange: 80/80
           Priority: 1
           SourceCidrIp: 0.0.0.0/0
           IpProtocol: tcp
           NicType: internet
-        - PortRange: 80/80
+        - PortRange: 443/443
           Priority: 1
           SourceCidrIp: 0.0.0.0/0
           IpProtocol: tcp
@@ -312,7 +312,7 @@ Outputs:
       zh-cn: nginx 访问页面。
     Value:
       Fn::Sub:
-        - http://${ServerAddress}:443, http://${ServerAddress}:80
+        - http://${ServerAddress}:80, http://${ServerAddress}:443
         - ServerAddress:
             Fn::Select:
               - 0
