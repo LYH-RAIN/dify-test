@@ -1,5 +1,5 @@
 Service:
-  RegionId: cn-hangzhou
+  RegionId: ap-southeast-1
   DeployType: ros
   OperationMetadata:
     StatusOperationConfigs:
@@ -9,16 +9,8 @@ Service:
           - Stop
           - Restart
     SupportBackup: true
-    
   DeployMetadata:
     SupplierDeployMetadata:
-      SupplierTemplateConfigs:
-        - Name: '单机版'
-          Url: 'ros_templates/template.yaml'
-          AllowedRegions:
-              - cn-hangzhou
-              - cn-shanghai
-              - cn-beijing
       FileArtifactRelation:
         '{{ computenest::file::LYH-RAIN_dify-test-docker-compose }}':
           ArtifactId: ${Artifact.Artifact_1.ArtifactId}
@@ -40,7 +32,7 @@ Artifact:
     ArtifactType: File
     ArtifactName: LYH-RAIN_dify-test-docker-compose
     ArtifactProperty:
-      RegionId: cn-hangzhou
+      RegionId: ap-southeast-1
       Url: 'resources/artifact_resources/docker_compose.tar'
   Artifact_2:
     ArtifactType: AcrImage
