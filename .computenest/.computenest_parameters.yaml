@@ -1,1 +1,0 @@
-{"ServiceType":"private","AllowedRegions":["cn-hangzhou","cn-shanghai","cn-beijing"],"ArtifactSourceType":"DockerCompose","RepoName":"LYH-RAIN/dify-test","Arch":"EcsSingle","DockerComposeEnvPath":"docker/.env.example","RegionId":"ap-southeast-1","CustomParameters":"","DockerComposeYamlPath":"docker/docker-compose.yaml"}
