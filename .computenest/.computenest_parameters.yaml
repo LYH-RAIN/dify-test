@@ -1,0 +1,12 @@
+RuntimeType: Container
+ServiceType: private
+ArtifactSourceType: DockerCompose
+ServiceBuildRegion: ap-southeast-1
+RepoName: LYH-RAIN/dify-test
+DockerComposeEnvPath: docker/.env.example
+RegionId: cn-hangzhou
+CustomParameters: ''
+DockerComposeYamlPath: docker/docker-compose.yaml
+Owner: LYH-RAIN
+Branch: main
+Platform: github
